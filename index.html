@@ -3,266 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Finance Expert | 빅데이터 핀테크 AI 전문가 과정</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        body {
-            background: #f8f9fa;
-            color: #212529;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-            color: white;
-            padding: 120px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background: white;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .feature-card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #4f46e5;
-        }
-
-        /* CTA Section */
-        .cta {
-            padding: 80px 0;
-            text-align: center;
-            background: #f1f5f9;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #4f46e5;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #4338ca;
-        }
-
-        /* Curriculum Section */
-        .curriculum {
-            padding: 100px 0;
-            background: white;
-        }
-
-        .curriculum-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .curriculum-item {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #4f46e5;
-        }
-
-        /* Stats Section */
-        .stats {
-            padding: 60px 0;
-            background: #1e1b4b;
-            color: white;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .stat-item h4 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #818cf8;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .features-grid, .curriculum-list {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    <title>핀테크 교육 프로그램</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section class="hero">
-        <div class="container">
-            <h1>미래 금융을 선도할<br>빅데이터 핀테크 AI 전문가 되기</h1>
-            <p>데이터 분석부터 AI 개발까지, 핀테크 산업의 핵심 기술을 한번에</p>
-            <a href="#" class="btn">수강 신청하기</a>
-        </div>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center py-24 shadow-lg">
+        <h1 class="text-5xl font-extrabold">핀테크 전문가 양성 프로그램</h1>
+        <p class="text-xl mt-4">최신 금융 기술을 배우고 실무에 적용하세요.</p>
+        <a href="#apply" class="mt-6 inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-gray-200 transition">신청하기</a>
     </section>
 
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h4>98%</h4>
-                    <p>취업 연계율</p>
+    <!-- About Section -->
+    <section class="max-w-6xl mx-auto p-12 text-center">
+        <h2 class="text-4xl font-bold mb-6 text-blue-400">왜 핀테크 교육이 필요한가?</h2>
+        <p class="text-gray-300 text-lg">4차 산업혁명 시대, 금융과 기술이 융합하는 핀테크는 필수 역량입니다. 실무 중심 교육으로 금융 혁신을 주도하세요.</p>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="bg-gray-800 py-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10 text-blue-400">커리큘럼</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-700 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-300">블록체인과 암호화폐</h3>
+                    <p class="text-gray-300 mt-4">블록체인의 개념부터 스마트 컨트랙트까지</p>
                 </div>
-                <div class="stat-item">
-                    <h4>250+</h4>
-                    <p>협력 기업</p>
+                <div class="p-8 bg-gray-700 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-300">AI와 금융 데이터 분석</h3>
+                    <p class="text-gray-300 mt-4">머신러닝을 활용한 금융 데이터 해석</p>
                 </div>
-                <div class="stat-item">
-                    <h4>1200+</h4>
-                    <p>수료생</p>
-                </div>
-                <div class="stat-item">
-                    <h4>24주</h4>
-                    <p>교육 기간</p>
+                <div class="p-8 bg-gray-700 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-300">결제 시스템과 보안</h3>
+                    <p class="text-gray-300 mt-4">핀테크 서비스 보안 및 결제 시스템 이해</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">왜 우리 과정인가요?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>실무 중심 커리큘럼</h3>
-                    <p>현업 전문가들이 설계한 실전 프로젝트로 실무 역량을 키웁니다. 금융권에서 실제 사용되는 기술과 도구를 다룹니다.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>1:1 맞춤 컨설팅</h3>
-                    <p>업계 최고 전문가들의 1:1 멘토링으로 커리어 방향을 설정하고, 포트폴리오를 완성합니다.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>취업 연계 프로그램</h3>
-                    <p>250+ 핀테크 기업들과의 네트워크를 통해 수료 즉시 취업 연계를 지원합니다.</p>
-                </div>
+    <!-- Instructors Section -->
+    <section class="max-w-6xl mx-auto py-16">
+        <h2 class="text-4xl font-bold text-center mb-10 text-blue-400">강사진</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Instructor" class="rounded-full mx-auto border-4 border-blue-500">
+                <h3 class="text-2xl font-semibold mt-6">이준혁 박사</h3>
+                <p class="text-gray-300">핀테크 스타트업 창업자</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Instructor" class="rounded-full mx-auto border-4 border-blue-500">
+                <h3 class="text-2xl font-semibold mt-6">김하나 교수</h3>
+                <p class="text-gray-300">블록체인 연구원</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Instructor" class="rounded-full mx-auto border-4 border-blue-500">
+                <h3 class="text-2xl font-semibold mt-6">박민수 CTO</h3>
+                <p class="text-gray-300">AI 기반 금융 분석 전문가</p>
             </div>
         </div>
     </section>
 
-    <section class="curriculum">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">커리큘럼</h2>
-            <div class="curriculum-list">
-                <div class="curriculum-item">
-                    <h3>Part 1. 데이터 분석 기초</h3>
-                    <p>Python, SQL, 통계학 기초부터 데이터 전처리, EDA까지</p>
-                </div>
-                <div class="curriculum-item">
-                    <h3>Part 2. 머신러닝 & AI</h3>
-                    <p>머신러닝 알고리즘, 딥러닝 프레임워크, AI 모델 개발</p>
-                </div>
-                <div class="curriculum-item">
-                    <h3>Part 3. 핀테크 특화과정</h3>
-                    <p>금융 데이터 분석, 리스크 관리, 금융 AI 서비스 개발</p>
-                </div>
-                <div class="curriculum-item">
-                    <h3>Part 4. 실전 프로젝트</h3>
-                    <p>실제 금융 데이터로 진행하는 종합 프로젝트</p>
-                </div>
-            </div>
-        </div>
+    <!-- Apply Section -->
+    <section id="apply" class="bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center py-16 shadow-lg">
+        <h2 class="text-4xl font-bold">지금 바로 등록하세요!</h2>
+        <p class="text-lg mt-6">한정된 좌석, 지금 신청하고 핀테크 전문가로 성장하세요.</p>
+        <a href="#" class="mt-8 inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-gray-200 transition">신청하기</a>
     </section>
 
-    <section class="cta">
-        <div class="container">
-            <h2 style="font-size: 2rem; margin-bottom: 20px;">지금 바로 시작하세요</h2>
-            <p style="margin-bottom: 30px;">미래 금융을 이끌어갈 핀테크 전문가의 길</p>
-            <a href="#" class="btn">무료 설명회 신청하기</a>
-        </div>
-    </section>
-
-    <script>
-        // GSAP 애니메이션
-        gsap.from('.hero h1', {
-            duration: 1,
-            y: 50,
-            opacity: 0,
-            ease: 'power3.out'
-        });
-
-        gsap.from('.feature-card', {
-            duration: 0.8,
-            y: 30,
-            opacity: 0,
-            stagger: 0.2,
-            scrollTrigger: '.features'
-        });
-
-        gsap.from('.stat-item', {
-            duration: 0.8,
-            y: 20,
-            opacity: 0,
-            stagger: 0.1,
-            scrollTrigger: '.stats'
-        });
-    </script>
+    <footer class="text-center py-8 text-gray-400 bg-gray-900">
+        &copy; 2025 핀테크 교육 프로그램. All rights reserved.
+    </footer>
 </body>
 </html>
